@@ -1,0 +1,34 @@
+[
+  {
+    "listing": "/rental-lincoln-park/2417Geneva/index.html",
+    "items": [
+      "/rental-lincoln-park/2417Geneva/floor-plans/garden/garden.html",
+      "/rental-lincoln-park/2417Geneva/floor-plans/1/unit1.html",
+      "/rental-lincoln-park/2417Geneva/floor-plans/2/unit2.html",
+      "/rental-lincoln-park/2417Geneva/floor-plans/3/unit3.html"
+    ]
+  },
+  {
+    "listing": "/rental-lincoln-park/2420Geneva/index.html",
+    "items": [
+      "/rental-lincoln-park/2420Geneva/floor-plans/2/unit2.html",
+      "/rental-lincoln-park/2420Geneva/floor-plans/3/unit3.html",
+      "/rental-lincoln-park/2420Geneva/features/bed/bedrooms.html",
+      "/rental-lincoln-park/2420Geneva/features/bath/bathrooms.html",
+      "/rental-lincoln-park/2420Geneva/features/kitchen/kitchen.html",
+      "/rental-lincoln-park/2420Geneva/features/laundry/laundry.html",
+      "/rental-lincoln-park/2420Geneva/features/tech/tech.html",
+      "/rental-lincoln-park/2420Geneva/features/materials/materials.html",
+      "/rental-lincoln-park/2420Geneva/gallery/apartments/apartments.html",
+      "/rental-lincoln-park/2420Geneva/gallery/amenities/amenities.html",
+      "/rental-lincoln-park/2420Geneva/gallery/community/community.html"
+    ]
+  },
+  {
+    "listing": "/development/index.html",
+    "items": [
+      "/development/projects/2420Geneva/2420Geneva.html",
+      "/development/projects/2417Geneva/2417Geneva.html"
+    ]
+  }
+]
