@@ -16,7 +16,7 @@
   --navbar-sec-size: 0.9rem;
   --cat-card-size: 0.75rem; /*override cat card text size*/
   --cat-size: 1.2em; /*cat card and descirption text size*/
-  --fig-cap-size: 0.825rem;
+  --fig-cap-size: 0.925rem;
   --quickback-size: 0.95rem;
 
 }
@@ -263,22 +263,9 @@ h2 a:hover {
   text-decoration: none;
 }
 
-/* blockquote {
-  margin: 0 0 1rem;
-  padding: 0.625rem 1.25rem;
-  border-left: 0.25rem solid var(--dark-brown);
-}
-
-.blockquote {
-  font-size: inherit;
-  padding-left: 1rem;
-  padding-right: 1.5rem;
-  color: var(--dark-brown);
-} */
-
 .caption {
   color: var(--dark-brown);
-  /* font-size: var(--fig-cap-size); */
+  font-size: var(--fig-cap-size) !important;
   margin-top: -1.2rem;
   margin-bottom: 0;
 }
@@ -287,6 +274,11 @@ h2 a:hover {
   color: var(--dark-brown);
   margin-top: -1rem;
   margin-bottom: 0;
+  font-size: var(--fig-cap-size) !important;
+}
+
+.caption-spaced p {
+  font-size: var(--fig-cap-size);
 }
 
 .panel-caption, .figure-caption, figcaption {
@@ -664,6 +656,30 @@ div.quarto-post .listing-description {
 .quarto-grid-item {
   border: none;
   background-color: var(--white);
+}
+
+.grid img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid {
+  gap: 1rem;
+}
+
+.media-fixed img,
+.media-fixed iframe,
+.media-fixed .media-box {
+  width: 100%;
+  height: 260px;
+}
+
+.media-fixed img {
+  object-fit: cover;
+}
+
+.media-fixed iframe {
+  border: 0;
 }
 
 .quarto-grid-item.borderless {
@@ -1059,7 +1075,7 @@ body:not(.floating) .nav-footer {
     align-items: center;
     text-align: center;
     font-size: var(--footer-size);
-    padding: 0.75rem 1rem !important;  /* reduce vertical + horizontal */
+    padding: 0.75rem 1rem 0.2rem 1rem !important;
   }
 
   /* reorder */
