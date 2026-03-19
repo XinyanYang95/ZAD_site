@@ -3,7 +3,6 @@
   --brown: #986409;
   --light-brown: #9161344b;
   --dark-brown: rgb(44, 25, 8);
-  
   --white: #fbf8f5;
   --main-font: 'Playfair Display';
   --minor-font: 'Inter';
@@ -82,9 +81,9 @@
 
 /* mobile menu */
 @media (max-width: 991.98px) {
-  .navbar-nav-scroll {
+  /* .navbar-nav-scroll {
     background: var(--white);
-  }
+  } */
 
   .navbar-nav .nav-link {
     color: var(--dark-brown) !important;
@@ -1075,7 +1074,7 @@ body:not(.floating) .nav-footer {
   }
 }
 
-/* 🔥 MOBILE FIX for Quarto footer */
+/* MOBILE FIX for Quarto footer */
 @media (max-width: 768px) {
 
   .nav-footer {
@@ -1106,6 +1105,13 @@ body:not(.floating) .nav-footer {
   .nav-footer-right {
     width: 100%;
     margin-bottom: 1rem;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* also fix inner container */
+  .nav-footer .footer-items {
+    justify-content: center !important;
   }
 
   .nav-footer p {
