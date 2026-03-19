@@ -1105,12 +1105,17 @@ body:not(.floating) .nav-footer {
   /* also fix inner container */
   .nav-footer .footer-items {
     justify-content: center !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
   }
 
   .nav-footer p {
-    line-height: 1.6;
-    margin-bottom: 0.0rem;  /* tighten text spacing */
+    margin-bottom: 0.4rem;
   }
+
+  .nav-footer p:last-child {
+    margin-bottom: 0 !important;
+    }
 }
 
 pre code:not(.sourceCode) {
