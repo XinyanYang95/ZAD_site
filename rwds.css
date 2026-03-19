@@ -29,7 +29,13 @@
   font-size: var(--navbar-size);
 }
 
-@media (max-width: 991px) {
+.navbar .nav-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--dark-brown);
+  border-radius: 2px;   /* optional, makes it softer */
+}
+
+@media (max-width: 991.98px) {
 .navbar-nav-scroll {
   background: var(--light-brown);
 }
@@ -59,7 +65,7 @@
   align-items: baseline;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
 .navbar-logo {
   max-height: 100px;
   width: auto;
@@ -77,7 +83,7 @@
   font-weight: 400;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
 .navbar-nav .nav-link {
   color: white;
   font-weight: 400;
@@ -98,19 +104,12 @@
 }
 }
 
-@media (max-width: 991px) {
-  .nav-item {
-    margin-top: 0;
-    margin-right: 0rem;
-}
-}
-
 /*-- search --*/
 .aa-DetachedSearchButton {
   margin-top: 5rem;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .aa-DetachedSearchButton {
     margin-top: 0;
 }
@@ -502,35 +501,6 @@ div.csl-entry {
   color: var(--dark-brown);
 }
 
-/* .pullquote-container {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.pullquote-grid {
-  padding-bottom: 1.8em;
-}
-
-.pullquote p {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: calc(1.345rem + 0.85vw);
-  color: var(--dark-brown);
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.2;
-}
-
-@media (min-width: 1200px) {
-.pullquote p {
-    font-size: 2rem;
-}
-}
-
-.pullquote img {
-  margin: 0;
-} */
-
 .table-caption, caption {
     color: var(--dark-brown) !important;
   font-size: var(--fig-cap-size);
@@ -539,7 +509,6 @@ div.csl-entry {
 .table-caption, caption b {
   color: var(--dark-brown);
 }
-
 
 /*-- font styles --*/
 
@@ -785,7 +754,6 @@ div.quarto-post .listing-description {
 
 
 /*-- background styles --*/
-
 .black-background {
   background-color: var(--dark-brown);
 }
@@ -847,27 +815,29 @@ div.quarto-post .listing-description {
 
 .top-story-text {
   font-size: var(--body-size);
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  margin-top: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin-left: 2.2rem;
 }
 
-
 .top-story-text h2 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 1.5rem;
-  margin-right: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .top-story-text p {
   line-height: 1.65;
-  margin-bottom: 1rem;
-  margin-left: 1.5rem;
-  margin-right: 0.5rem;
-  text-align: justify;
+  margin-bottom: 1.0rem;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .top-story-text p {
+    text-align: left;
+  }
 }
 
 .header-banner {
@@ -1078,22 +1048,45 @@ body:not(.floating) .nav-footer {
   font-family: var(--minor-font);
 }
 
+/* 🔥 MOBILE FIX for Quarto footer */
+@media (max-width: 768px) {
 
-/* -- DataScienceBites --
+  .nav-footer {
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
 
-.dsb {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-} */
+  .nav-footer-left,
+  .nav-footer-center,
+  .nav-footer-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
+  /* Fix stacked spacing */
+  .nav-footer-left .footer-items .nav-item,
+  .nav-footer-center .footer-items .nav-item,
+  .nav-footer-right .footer-items .nav-item {
+    display: block;
+    margin: 0.3rem 0;
+  }
 
-/* webR
-.btn-webr {
-  background-color: var(--brown);
-  color: white;
-} */
+  /* Fix text wrapping */
+  .nav-footer p {
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .nav-item {
+    margin-top: 0.5rem;
+    margin-right: 0rem;
+}
+}
 
 pre code:not(.sourceCode) {
   background-color: #F8F8F8;
