@@ -1075,7 +1075,7 @@ body:not(.floating) .nav-footer {
     align-items: center;
     text-align: center;
     font-size: var(--footer-size);
-    padding: 0.75rem 1rem 0.2rem 1rem !important;
+    padding: 0.75rem 1rem 0.0rem 1rem !important;
   }
 
   /* reorder */
@@ -1109,7 +1109,7 @@ body:not(.floating) .nav-footer {
 
   .nav-footer p {
     line-height: 1.6;
-    margin-bottom: 0.4rem;  /* tighten text spacing */
+    margin-bottom: 0.0rem;  /* tighten text spacing */
   }
 }
 
