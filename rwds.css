@@ -329,40 +329,6 @@ div.csl-entry {
   font-variant-numeric: normal;
 }
 
-/* .article-btn {
-  border: none;
-  border-radius: 0px;
-  background-color: var(--dark-brown);
-  color: white;
-  padding: 0.85em 1em;
-  text-align: center;
-  display: inline-block;
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  cursor: pointer;
-  width: 100%;
-}
-
-.article-btn p {
-  font-family: var(--main-font);
-  font-size: 1.3em;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 0px;
-}
-
-.article-btn a {
-  color: white;
-  font-weight: 500;
-  display: block;
-  width: auto;
-  height: auto;
-}
-
-.article-btn a:hover {
-  color: var(--brown);
-} */
-
 .further-info {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -398,7 +364,7 @@ div.csl-entry {
 
 .nav-btn p {
   font-family: var(--main-font);
-  font-size: 1.3em;
+  font-size: 1.3rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 0px;
@@ -406,12 +372,16 @@ div.csl-entry {
 
 .nav-btn a {
   color: white;
-  font-weight: 500;
   display: block;
   width: auto;
   height: auto;
 }
 
+.button p > a {
+  font-family: var(--main-font);
+  font-size: 1.0rem;
+  font-weight: 700;
+}
 .nav-btn a:hover {
   color: var(--brown);
 }
@@ -514,7 +484,6 @@ div.csl-entry {
 }
 
 /*-- font styles --*/
-
 h3,
 .h3,
 h4,
@@ -792,10 +761,17 @@ div.quarto-post .listing-description {
 
 /*-- homepage styles --*/
 .content-container {
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding-left: 0em;
+  padding-right: 0em;
   font-family: var(--main-font);
 }
+
+/* @media (max-width: 768px) {
+  .content-container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+} */
 
 .top-story {
   max-width: 1000px;
@@ -1082,11 +1058,11 @@ body:not(.floating) .nav-footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 1.5em;
-    padding-bottom: 1.5em;
+    font-size: var(--footer-size);
+    padding: 0.75rem 1rem !important;  /* reduce vertical + horizontal */
   }
 
-  /* 🔥 reorder */
+  /* reorder */
   .nav-footer-right {
     order: 1;   /* show FIRST */
   }
@@ -1103,8 +1079,9 @@ body:not(.floating) .nav-footer {
   .nav-footer-left,
   .nav-footer-center,
   .nav-footer-right {
+    margin: 0 !important;
+    padding: 0 !important;
     width: 100%;
-    margin-bottom: 1rem;
     text-align: center !important;
     justify-content: center !important;
   }
@@ -1115,8 +1092,8 @@ body:not(.floating) .nav-footer {
   }
 
   .nav-footer p {
-    margin: 0;
     line-height: 1.6;
+    margin-bottom: 0.4rem;  /* tighten text spacing */
   }
 }
 
