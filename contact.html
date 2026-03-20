@@ -76,9 +76,11 @@ background-size: cover;
 <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
 <link rel="manifest" href="./images/site.webmanifest">
+<script src="./scripts/zoom.js"></script>
 
 
 <link rel="stylesheet" href="rwds.css">
+<link rel="stylesheet" href="zoom.css">
 <meta property="og:title" content="Zang &amp; Di LLC - Contact us">
 <meta property="og:description" content="">
 <meta property="og:site-name" content="Zang &amp; Di LLC">
@@ -177,6 +179,9 @@ background-size: cover;
 
 
 </main> <!-- /main -->
+<div class="zoom-overlay" id="zoomOverlay">
+  <img id="zoomImg">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

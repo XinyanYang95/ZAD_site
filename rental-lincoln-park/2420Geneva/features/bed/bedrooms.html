@@ -63,11 +63,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon-32x32.png">
 <link rel="apple-touch-icon" href="../../../../images/apple-touch-icon.png">
 <link rel="manifest" href="../../../../images/site.webmanifest">
+<script src="../../../../scripts/zoom.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../../rwds.css">
+<link rel="stylesheet" href="../../../../zoom.css">
 <meta property="og:title" content="Zang &amp; Di LLC - Bedrooms">
 <meta property="og:description" content="A collection of four thoughtfully designed bedrooms, each offering its own character, natural light, and flexibility. From the spacious master bedroom with a walk-in closet to bright south- and east-facing rooms ideal for sleeping or working from home, every space is designed for comfort and everyday living.">
 <meta property="og:image" content="https://www.zadchicago.com/rental-lincoln-park/2420Geneva/images/north_bedroom_2000.jpeg">
@@ -225,6 +227,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<div class="zoom-overlay" id="zoomOverlay">
+  <img id="zoomImg">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -106,11 +106,13 @@ background-size: cover;
 <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
 <link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
 <link rel="manifest" href="../../images/site.webmanifest">
+<script src="../../scripts/zoom.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../rwds.css">
+<link rel="stylesheet" href="../../zoom.css">
 <meta property="og:title" content="2417 N Geneva | Zang &amp; Di LLC">
 <meta property="og:description" content="2417 N Geneva Terrace, Chicago, IL, 60614">
 <meta property="og:image" content="https://www.zadchicago.com/rental-lincoln-park/2417Geneva/images/2417_ext_front.jpeg">
@@ -239,7 +241,7 @@ background-size: cover;
 <p>Explore the available apartment layouts, highlighting spacious bedrooms, modern kitchens and bathrooms, and well-balanced living areas designed for comfortable everyday living.</p>
 <div id="listing-floor-plans" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="3 Beds,2 Baths,1260 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1773967414731" data-listing-reading-time-sort="3">
+<div class="g-col-1" data-index="0" data-categories="3 Beds,2 Baths,1260 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1774020710839" data-listing-reading-time-sort="3">
 <a href="../../rental-lincoln-park/2417Geneva/floor-plans/garden/garden.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -270,7 +272,7 @@ Spacious 3-bedroom garden apartment with den.
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="3 Beds,2 Baths,1260 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1773967388729" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="1" data-categories="3 Beds,2 Baths,1260 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1774020652905" data-listing-reading-time-sort="2">
 <a href="../../rental-lincoln-park/2417Geneva/floor-plans/1/unit1.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -301,7 +303,7 @@ Spacious 4-bedroom apartment on the first floor.
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="4 Beds,2 Baths,1280 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1773967400328" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="2" data-categories="4 Beds,2 Baths,1280 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1774020683248" data-listing-reading-time-sort="2">
 <a href="../../rental-lincoln-park/2417Geneva/floor-plans/2/unit2.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -332,7 +334,7 @@ Spacious 4-bedroom apartment on the second floor.
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="4 Beds,2 Baths,1350 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1773967407804" data-listing-reading-time-sort="2">
+<div class="g-col-1" data-index="3" data-categories="4 Beds,2 Baths,1350 sq. ft.,Available mid-2026" data-listing-file-modified-sort="1774020694873" data-listing-reading-time-sort="2">
 <a href="../../rental-lincoln-park/2417Geneva/floor-plans/3/unit3.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -409,6 +411,9 @@ Explore the residence through images highlighting the apartments, amenities, and
 
 
 </main> <!-- /main -->
+<div class="zoom-overlay" id="zoomOverlay">
+  <img id="zoomImg">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

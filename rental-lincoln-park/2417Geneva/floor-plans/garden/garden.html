@@ -63,11 +63,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon-32x32.png">
 <link rel="apple-touch-icon" href="../../../../images/apple-touch-icon.png">
 <link rel="manifest" href="../../../../images/site.webmanifest">
+<script src="../../../../scripts/zoom.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../../rwds.css">
+<link rel="stylesheet" href="../../../../zoom.css">
 <meta property="og:title" content="Zang &amp; Di LLC - Garden Unit">
 <meta property="og:description" content="Spacious 3-bedroom garden apartment with den.">
 <meta property="og:image" content="https://www.zadchicago.com/rental-lincoln-park/2417Geneva/images/garden.pdf">
@@ -184,9 +186,10 @@ ul.task-list li input[type="checkbox"] {
 <div class="text-center">
 <p>The garden residence offers three bedrooms, a flexible den, and two full bathrooms, along with a generous living and dining space and a functional kitchen. The layout also includes in-unit laundry and additional storage for everyday convenience.</p>
 </div>
+<!-- [![](../../images/garden-cut.png){width=100% fig-align="center"}](../../images/garden.pdf){target="_blank"} -->
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../../images/garden.pdf" target="_blank"><img src="../../images/garden-cut.png" class="quarto-discovered-preview-image img-fluid figure-img" style="width:100.0%"></a></p>
+<p><img src="../../images/garden-cut.png" class="zoomable quarto-discovered-preview-image img-fluid figure-img" style="width:100.0%"></p>
 </figure>
 </div>
 
@@ -409,6 +412,9 @@ The residence has been renovated with durable modern materials and updated build
 </section>
 
 </main> <!-- /main -->
+<div class="zoom-overlay" id="zoomOverlay">
+  <img id="zoomImg">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

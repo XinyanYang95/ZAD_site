@@ -75,11 +75,13 @@ background-size: cover;
 <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <link rel="manifest" href="../images/site.webmanifest">
+<script src="../scripts/zoom.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../rwds.css">
+<link rel="stylesheet" href="../zoom.css">
 <meta property="og:title" content="Chicago North | Zang &amp; Di LLC">
 <meta property="og:description" content="Residential rental properties across Chicago’s North Side. Properties: 1340 W Pratt | 2840 W Belle Plaine">
 <meta property="og:image" content="https://www.zadchicago.com/rental-chicago-north/1340Pratt/images/1340_ext.png">
@@ -214,6 +216,9 @@ background-size: cover;
 
 
 </main> <!-- /main -->
+<div class="zoom-overlay" id="zoomOverlay">
+  <img id="zoomImg">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

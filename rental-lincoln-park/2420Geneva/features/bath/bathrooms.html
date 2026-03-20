@@ -63,11 +63,13 @@ ul.task-list li input[type="checkbox"] {
 <link rel="icon" type="image/png" sizes="32x32" href="../../../../images/favicon-32x32.png">
 <link rel="apple-touch-icon" href="../../../../images/apple-touch-icon.png">
 <link rel="manifest" href="../../../../images/site.webmanifest">
+<script src="../../../../scripts/zoom.js"></script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../../../../rwds.css">
+<link rel="stylesheet" href="../../../../zoom.css">
 <meta property="og:title" content="Zang &amp; Di LLC - Bathrooms">
 <meta property="og:description" content="Two bright and modern bathrooms designed for comfort and everyday functionality. One features a spacious walk-in shower, while the other offers a bathtub; both include double vanities and natural light.">
 <meta property="og:image" content="https://www.zadchicago.com/rental-lincoln-park/2420Geneva/images/south_bathroom_light_on_2000.jpeg">
@@ -201,6 +203,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<div class="zoom-overlay" id="zoomOverlay">
+  <img id="zoomImg">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
