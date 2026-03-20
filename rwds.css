@@ -776,18 +776,20 @@ div.quarto-post .listing-description {
 
 
 /*-- homepage styles --*/
+main {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0;
+
+}
+
 .content-container {
   padding-left: 0em;
   padding-right: 0em;
+  padding-bottom: 0em;
   font-family: var(--main-font);
 }
-
-/* @media (max-width: 768px) {
-  .content-container {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-} */
 
 .top-story {
   max-width: 1000px;
@@ -876,13 +878,14 @@ div.quarto-post .listing-description {
 .listing-block {
   max-width: 1000px;
   margin: 0 auto;
-  padding-bottom: 1.1em; 
+  padding-bottom: 0em;
   box-sizing: border-box;
   border-bottom: 1px solid var(--dark-brown);
 }
 
 .content-container:last-of-type .listing-block {
   border-bottom: none;
+  padding-bottom: 0em;
 }
 
 .listing-block h2 {
@@ -891,6 +894,17 @@ div.quarto-post .listing-description {
 }
 
 .listing-block h2:hover {
+  color: var(--brown);
+}
+
+.listing-block h5 {
+  font-weight: 500;
+  /* letter-spacing: 0.06em; */
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+.listing-block h5:hover {
   color: var(--brown);
 }
 
@@ -969,12 +983,12 @@ div.quarto-post .listing-description {
   color: var(--brown);
 }
 
-/*-- footer style --*/
+/* -- footer style --
 .footer-container {
   padding-left: 1.5em;
   padding-right: 1.5em;
-  padding-top: 1em;
-  margin-top: 2.5em;
+  padding-top: 0.5em;
+  margin-top: 0.em;
 }
 
 .footer-text h3, .h3 {
@@ -1014,7 +1028,7 @@ div.quarto-post .listing-description {
   padding-top: 1em;
   padding-bottom: 1em; 
   box-sizing: border-box;
-}
+} */
 
 
 /*-- nav footer styles --*/
@@ -1026,6 +1040,7 @@ div.quarto-post .listing-description {
   padding-left: 1.5em !important;
   padding-right: 1.5em !important;
   padding-top: 0.5em;
+  padding-bottom: 0.5em !important;
 }
 
 body:not(.floating) .nav-footer {
@@ -1048,6 +1063,7 @@ body:not(.floating) .nav-footer {
 
 .nav-footer-left .footer-items .nav-item, .nav-footer-center .footer-items .nav-item, .nav-footer-right .footer-items .nav-item {
   margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-family: var(--minor-font);
@@ -1075,7 +1091,7 @@ body:not(.floating) .nav-footer {
     align-items: center;
     text-align: center;
     font-size: var(--footer-size);
-    padding: 0.75rem 1rem 0.0rem 1rem !important;
+    padding: 0.5rem 1rem 0.5rem 1rem !important;
   }
 
   /* reorder */
@@ -1084,22 +1100,26 @@ body:not(.floating) .nav-footer {
   }
 
   .nav-footer-left {
-    order: 2;   /* show SECOND */
+    order: 3;   /* show SECOND */
   }
 
   .nav-footer-center {
-    order: 3;   /* if exists */
+    order: 2;   /* if exists */
   }
 
   /* make each full width */
   .nav-footer-left,
-  .nav-footer-center,
   .nav-footer-right {
     margin: 0 !important;
     padding: 0 !important;
     width: 100%;
     text-align: center !important;
     justify-content: center !important;
+  }
+
+  /* make each full width */
+  .nav-footer-center {
+    display: none !important;
   }
 
   /* also fix inner container */
@@ -1110,12 +1130,13 @@ body:not(.floating) .nav-footer {
   }
 
   .nav-footer p {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;  
+    line-height: 1.3;      
   }
-
+  
   .nav-footer p:last-child {
-    margin-bottom: 0 !important;
-    }
+    margin-bottom: 0;        /* remove bottom gap */
+  }
 }
 
 pre code:not(.sourceCode) {
