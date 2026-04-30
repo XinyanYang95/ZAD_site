@@ -1,11 +1,9 @@
 [
   {
-    "listing": "/rental-lincoln-park/2417Geneva/index.html",
+    "listing": "/development/index.html",
     "items": [
-      "/rental-lincoln-park/2417Geneva/floor-plans/garden/garden.html",
-      "/rental-lincoln-park/2417Geneva/floor-plans/1/unit1.html",
-      "/rental-lincoln-park/2417Geneva/floor-plans/2/unit2.html",
-      "/rental-lincoln-park/2417Geneva/floor-plans/3/unit3.html"
+      "/development/projects/2420Geneva/2420Geneva.html",
+      "/development/projects/2417Geneva/2417Geneva.html"
     ]
   },
   {
@@ -25,10 +23,18 @@
     ]
   },
   {
-    "listing": "/development/index.html",
+    "listing": "/rental-lincoln-park/2417Geneva/index.html",
     "items": [
-      "/development/projects/2420Geneva/2420Geneva.html",
-      "/development/projects/2417Geneva/2417Geneva.html"
+      "/rental-lincoln-park/2417Geneva/floor-plans/garden/garden.html",
+      "/rental-lincoln-park/2417Geneva/floor-plans/1/unit1.html",
+      "/rental-lincoln-park/2417Geneva/floor-plans/2/unit2.html",
+      "/rental-lincoln-park/2417Geneva/floor-plans/3/unit3.html"
+    ]
+  },
+  {
+    "listing": "/rental-lincoln-park/2653Wilton/index.html",
+    "items": [
+      "/rental-lincoln-park/2653Wilton/floor-plans/1/unit1.html"
     ]
   }
 ]
